@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electricity Bill Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Electricity Bill Generator</h1>
+
+    <form id="billForm">
+      <input type="text" id="consumerName" placeholder="Enter Consumer Name" required />
+      <input type="number" id="units" placeholder="Enter Units Consumed" required />
+      <input type="number" id="rate" placeholder="Rate per Unit (₹)" step="0.01" required />
+      <button type="submit">Generate Bill</button>
+    </form>
+
+    <div id="receipt" style="display:none;">
+      <h3>Electricity Bill</h3>
+      <pre id="receiptContent"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
